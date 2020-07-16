@@ -3,9 +3,9 @@ insert into role(id,name)values(2,'guide');
 
 select * from role;
 
-insert into skill(id,description,name)values(1,'self learning','learn');
-insert into skill(id,description,name)values(2,'technical skills','coding');
-select * from skill;
+insert into skills(id,description,name)values(1,'self learning','learn');
+insert into skills(id,description,name)values(2,'technical skills','coding');
+select * from skills;
 
 insert into post_type(id,name)values(1,'business');
 insert into post_type(id,name)values(2,'business');
@@ -26,7 +26,7 @@ insert into higher_degree(id,degree_name,university_name,profile_id)values(1,'BE
 insert into higher_degree(id,degree_name,university_name,profile_id)values(2,'BE','STANFORD',2);
 
 
-insert into experience(id,company_name,currentvalue,enddate,startdate,profile_id)values(2,'CTS',1,TO_DATE('2008/11/11','YYYY/MM/DD'),TO_DATE('2019/11/11','YYYY/MM/DD'),2);
+insert into experiences(id,company_name,currentvalue,enddate,startdate,profile_id)values(2,'CTS',1,TO_DATE('2008/11/11','YYYY/MM/DD'),TO_DATE('2019/11/11','YYYY/MM/DD'),2);
 
 
 insert into project(id,name,number_of_members,profile_id,short_description)values(1,'Alumini management',10,1,'for school and college');

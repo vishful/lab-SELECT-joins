@@ -1,5 +1,5 @@
 create table role(Id NUMBER(20), name varchar2(255) NOT NULL,primary key(Id));
-create table skill(Id NUMBER(20)primary key, description varchar2(255) NULL, name varchar(255) NOT NULL);
+create table skills(Id NUMBER(20)primary key, description varchar2(255) NULL, name varchar(255) NOT NULL);
 create table post_type(Id NUMBER(20)primary key,name varchar2(255) NOT NULL);
 create table department(Id NUMBER(20)primary key, name varchar2(255) NOT NULL);
 
@@ -31,7 +31,7 @@ create table higher_degree
   FOREIGN KEY(profile_id) REFERENCES profile(Id)
 );
 
-create table experience
+create table experiences
 (
   Id NUMBER(20)primary key,
   company_name varchar2(255) NOT NULL,
@@ -42,10 +42,10 @@ create table experience
   FOREIGN KEY(profile_id) REFERENCES profile(Id)
 );
 
-Alter table experience 
+Alter table experiences 
 RENAME COLUMN current TO currentvalue;
 
-desc experience;
+desc experiences;
 create table project
 (
   Id NUMBER(20)primary key,
@@ -90,7 +90,7 @@ CREATE table querytable
 );
 
 desc querytable;
-create table event
+create table events
 (
   Id NUMBER(20) primary key,
   dateof DATE NOT NULL,
